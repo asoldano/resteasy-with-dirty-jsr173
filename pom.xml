@@ -10,11 +10,22 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
+    <dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>org.jboss.resteasy</groupId>
+          <artifactId>resteasy-bom</artifactId>
+          <version>3.0.19.Final</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-multipart-provider</artifactId>
-            <version>3.0.19.Final</version>
         </dependency>
     </dependencies>
 
